@@ -1,0 +1,90 @@
+@import "../variable";
+
+#services-section {
+  padding: 40px;
+  width: 100%;
+  min-height: 100vh;
+
+  .services-card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .services-card {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      margin: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 0.1);
+      overflow: hidden;
+      text-align: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: calc(-100% + 4px);
+        width: 100%;
+        height: 100%;
+        background: $gradient;
+        z-index: 1;
+        transition: 0.5s ease-in-out;
+      }
+
+      &:hover::before {
+        bottom: 0;
+      }
+
+      &:hover {
+        div {
+          h2 {
+            color: $white;
+            margin-bottom: 10px;
+          }
+          p {
+            color: $white;
+          }
+        }
+      }
+
+      div {
+        position: relative;
+        z-index: 2;
+
+        h2 {
+          transition: 0.5s;
+          font-size: 26px;
+        }
+        p {
+          transition: 0.5s;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #services-section {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #services-section {
+    padding: 10px;
+    .services-card-wrapper {
+      .services-card {
+        width: 300px;
+      }
+    }
+  }
+}

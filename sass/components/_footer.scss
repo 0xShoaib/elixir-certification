@@ -1,4 +1,4 @@
-@import "./variable";
+@import "../variable";
 
 footer {
   background-color: $black;
@@ -46,7 +46,6 @@ footer {
       }
       p {
         margin-left: 10px;
-        margin-top: 15px;
         transition: 0.3s ease-in-out;
       }
       &:hover {
@@ -55,6 +54,11 @@ footer {
           color: $white;
         }
       }
+    }
+  }
+  .footer-address-wrapper {
+    p {
+      margin-top: 10px;
     }
   }
 

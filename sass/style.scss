@@ -20,39 +20,6 @@ p {
   font-size: 16px;
 }
 
-a {
-  text-decoration: none;
-  color: $black;
-  outline: none;
-
-  &:hover {
-    text-decoration: none;
-    color: $black;
-  }
-
-  &:focus {
-    outline: none;
-  }
-}
-
-.btn {
-  color: $white;
-  border: none;
-  font-size: 18px;
-  letter-spacing: 1.4px;
-  border-radius: 4px;
-  transition: all 0.2s ease-in-out;
-  background: $gradient;
-
-  &:hover {
-    color: $white;
-  }
-
-  &:focus {
-    outline: none;
-  }
-}
-
 .section-heading {
   margin: 30px auto;
   max-width: 800px;
@@ -61,9 +28,6 @@ a {
 
   h1 {
     position: relative;
-
-    width: max-content;
-
     margin: 50px auto;
 
     &::after {
@@ -102,12 +66,6 @@ a {
   opacity: 0.7;
 }
 
-@import "./header";
-
-@import "./banner";
-
-@import "./services";
-
-@import "./msgForm";
-
-@import "./footer";
+@import "./HomePage";
+@import "./AboutPage";
+@import "./Services";

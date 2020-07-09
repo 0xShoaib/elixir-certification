@@ -1,4 +1,4 @@
-@import "./variable";
+@import "../variable";
 
 #banner-section {
   width: 100%;
@@ -42,7 +42,21 @@
 
   .banner-btn-wrapper {
     a {
-      padding: 15px 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+
+      text-decoration: none;
+      color: $white;
+      outline: none;
+
+      &:hover {
+        text-decoration: none;
+        color: $white;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
   }
 }

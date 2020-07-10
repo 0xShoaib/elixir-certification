@@ -49,6 +49,9 @@
       color: $white;
       outline: none;
 
+      background: $gradient;
+      border-radius: 6px;
+
       &:hover {
         text-decoration: none;
         color: $white;

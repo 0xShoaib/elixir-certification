@@ -129,6 +129,8 @@ tr {
   li {
     margin-left: 20px;
     color: $grey;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 
@@ -145,5 +147,26 @@ tr {
 
   img {
     width: 100%;
+  }
+}
+
+.points {
+  list-style: none;
+}
+
+@media screen and (max-width: 375px) {
+  .table {
+    th {
+      padding: 4px;
+      font-size: 15px;
+    }
+    td {
+      letter-spacing: 0;
+      padding: 4px;
+      font-size: 14px;
+    }
+    .row {
+      margin-left: 10px !important;
+    }
   }
 }

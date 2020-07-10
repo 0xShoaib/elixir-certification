@@ -30,7 +30,7 @@
 
   p {
     padding: 20px;
-    text-align: center;
+    text-align: justify;
     line-height: 2;
   }
 
@@ -38,7 +38,7 @@
     list-style: none;
     text-align: center;
 
-    width: max-content;
+    // width: max-content;
     margin: 20px auto;
     margin-bottom: 50px;
 
@@ -60,7 +60,7 @@
 
       p {
         padding: 0;
-        font-size: 18px;
+        text-align: left;
       }
     }
   }

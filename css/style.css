@@ -443,6 +443,8 @@ header .active-nav-btn .bottom {
   text-decoration: none;
   color: #ffffff;
   outline: none;
+  background: linear-gradient(-60deg, #ff9100 0%, #ff0044 100%);
+  border-radius: 6px;
 }
 
 #banner-section .banner-btn-wrapper a:hover {
@@ -513,7 +515,6 @@ header .active-nav-btn .bottom {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
 }
 
 #services-section .services-card-wrapper .services-card::before {
@@ -540,6 +541,11 @@ header .active-nav-btn .bottom {
 
 #services-section .services-card-wrapper .services-card:hover div p {
   color: #ffffff;
+}
+
+#services-section .services-card-wrapper .services-card a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #services-section .services-card-wrapper .services-card div {
@@ -870,16 +876,13 @@ footer .footer-social-wrapper .footer-social-icon i:hover {
 
 .about p {
   padding: 20px;
-  text-align: center;
+  text-align: justify;
   line-height: 2;
 }
 
 .about ul {
   list-style: none;
   text-align: center;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   margin: 20px auto;
   margin-bottom: 50px;
 }
@@ -909,7 +912,7 @@ footer .footer-social-wrapper .footer-social-icon i:hover {
 
 .about ul li p {
   padding: 0;
-  font-size: 18px;
+  text-align: left;
 }
 
 .service-banner-section {
@@ -1046,6 +1049,8 @@ tr td {
 .list li {
   margin-left: 20px;
   color: #808080;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .accordion {
@@ -1062,5 +1067,24 @@ tr td {
 
 .service-image img {
   width: 100%;
+}
+
+.points {
+  list-style: none;
+}
+
+@media screen and (max-width: 375px) {
+  .table th {
+    padding: 4px;
+    font-size: 15px;
+  }
+  .table td {
+    letter-spacing: 0;
+    padding: 4px;
+    font-size: 14px;
+  }
+  .table .row {
+    margin-left: 10px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */

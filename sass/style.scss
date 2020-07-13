@@ -1,5 +1,9 @@
 @import "./variable";
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -66,6 +70,43 @@ p {
   opacity: 0.7;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  font-size: 24px;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $gradient;
+  cursor: pointer;
+  z-index: 999;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 30px 0.2px rgba($color: $primary, $alpha: 0.2);
+
+  i {
+    color: $white;
+  }
+}
+
+.scroll-to-top.active-scroll {
+  visibility: visible;
+  opacity: 1;
+}
+
 @import "./HomePage";
 @import "./AboutPage";
 @import "./Services";
+@import "./Career";
+@import "./ContactPage";

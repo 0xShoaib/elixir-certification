@@ -1242,6 +1242,12 @@ tr td {
   margin: 20px 0;
 }
 
+@media screen and (max-width: 375px) {
+  .career-section .career-content p {
+    font-size: 16px;
+  }
+}
+
 .contact-banner {
   position: relative;
   width: 100%;
@@ -1250,6 +1256,7 @@ tr td {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  text-align: center;
 }
 
 .contact-banner h1 {
@@ -1284,7 +1291,7 @@ tr td {
 .details-card-wrapper .details-card {
   width: 500px;
   min-height: 300px;
-  margin: 20px;
+  margin: 20px 0;
   padding: 20px 5px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -1400,8 +1407,7 @@ tr td {
 
 @media screen and (max-width: 510px) {
   .details-card-wrapper .details-card {
-    width: 320px;
-    min-height: 300px;
+    width: 310px;
   }
 }
 /*# sourceMappingURL=style.css.map */

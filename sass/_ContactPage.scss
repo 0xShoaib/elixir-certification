@@ -21,6 +21,7 @@
     letter-spacing: 1.4px;
     color: $white;
   }
+  text-align: center;
 }
 
 .details-card-wrapper {
@@ -33,7 +34,7 @@
   .details-card {
     width: 500px;
     min-height: 300px;
-    margin: 20px;
+    margin: 20px 0;
     padding: 20px 5px;
     background-color: $white;
 
@@ -136,8 +137,7 @@
 @media screen and (max-width: 510px) {
   .details-card-wrapper {
     .details-card {
-      width: 320px;
-      min-height: 300px;
+      width: 310px;
     }
   }
 }

@@ -18,6 +18,20 @@ html {
   color: $black;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #b4b4b4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $gradient;
+  border-radius: 5px;
+}
+
 // Global Styles -----------------
 p {
   color: $grey;
